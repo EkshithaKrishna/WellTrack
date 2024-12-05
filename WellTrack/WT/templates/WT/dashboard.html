@@ -48,6 +48,9 @@
         .chatbot-btn {
             background-color: #28a745; /* Chatbot button color */
         }
+        .appointment-manager-btn {
+            background-color: #6f42c1; /* Unique color for Appointment Manager */
+        }
     </style>
 </head>
 <body>
@@ -62,6 +65,16 @@
         <!-- Sleep Tracker as a button -->
         <form action="{% url 'sleep-tracker' %}" method="GET">
             <button type="submit">Sleep Tracker</button>
+        </form>
+
+        <!-- Calorie Tracker as a button -->
+        <form action="{% url 'calorie-tracker' %}" method="GET">
+            <button type="submit">Calorie Tracker</button>
+        </form>
+
+        <!-- Appointment Manager button -->
+        <form action="{% url 'appointment-manager' %}" method="GET">
+            <button type="submit" class="appointment-manager-btn">Appointment Manager</button>
         </form>
 
         <!-- Chatbot button -->
