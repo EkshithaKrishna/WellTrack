@@ -36,7 +36,8 @@ INSTALLED_APPS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "*"
+    "http://*",
+    "https://*"
 ]
 
 MIDDLEWARE = [
